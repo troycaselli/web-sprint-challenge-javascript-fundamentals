@@ -260,8 +260,6 @@ console.log(cuboidTwo.surfaceArea()); // 130
 
 
 
-  
-
 
   /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
   function foo(){
