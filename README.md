@@ -25,14 +25,28 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+    .map() creates a copy of an array; if copying objects, it has the ability to only copy desired elements from each object.
+    Example use: creating a copy of an array of emails from an array of objects with many elements, one of which is an email key:value pair.
+    .reduce() flattens the elements of an array or an array of object's elements.
+    Example use: Adding up an array of objects' key:value pair indicating each family's RSVPs.
+    .filter() creates a copy of an array (of elements or objects) that returns true for a conditional. If concerning objects, the entire object is copied, not just the element considered.
+    Example use: Filter through an array of objects and include all objects which has a value of "Johnson" for a last name in the new array.
 
 2. Explain the difference between a callback and a higher order function.
+    Higher order functions receive a function as a parameter, while callback functions are the functions received as arguments for higher order functions.
 
 3. Explain what a closure is.
+    Closures are nested functions that have access to and reference external variables.
 
 4. Describe the four principles of the 'this' keyword.
+  1. Global/window binding: 'this' is in reference to the JavaScript program as a whole; when no other rules apply.
+  2. Implicit binding: 'this' is bound to the object on which a method is called; it is what precedes the . in object.method().
+  3. Explicit binding: 'this' is bound to a particular context (provided inside the ()) with the methods .call(), .apply(), and .bind().
+  .bind() does not immediately invoke, unlike the other two.
+  4. New/constructor binding: 'this' is bound to a specific object created by using a template-like, constructor object.
 
 5. Why do we need super() in an extended class?
+    super() replaces the .call(), .apply(), and the .bind() functionality. It connects the child class to the prpoerties of the parent class.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
